@@ -1,0 +1,201 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+        background: linear-gradient(to right, #000000, #5b5b5b);
+}
+.logo{
+    color: white;
+    margin-left: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #000000;
+    padding:  10px;
+    border-radius: 50%;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    transform: translate(-2px);
+   
+}
+.navtext{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #10042c96;
+    transition: 0.5;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.navtext:hover{
+    color: #5555ff;
+    border-bottom: 2px solid #5555ff;
+    background-color: azure;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    margin-left: 25px;
+}
+.container {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    padding: 60px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.card {
+    background-color: #363636;
+    width: 320px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+    margin: 15px; /* Adds space around each card */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 30px rgba(15, 15, 15, 0.2);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+
+}
+h1{
+    margin: 15px 0;
+}
+.bio {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #cccccc;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration-line: underline;
+    display: inline-block;
+    background-color: rgb(36, 36, 250);
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+a:hover {
+    font-size: larger;
+    color: #000000;
+    background-color: rgb(247, 247, 252);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+}
+.skill-list{
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin-left: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.skill-list li {
+    background-color: #5555ff;
+    border-color: #7777ff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    /* border: 1px solid #555; */
+    cursor: pointer;
+    transition: 0.5;
+    position: relative; /* This acts as the 'anchor' for the meaning */
+    display: inline-block;
+    cursor: pointer;
+}
+
+.meaning {
+    position: absolute; /* This pulls it out of the normal layout flow */
+    bottom: 135%;         /* Puts it right below the skill name */
+    left: 50%;
+    transform: translateX(-50%); /* Centers it perfectly */
+    
+    background-color: rgba(20, 20, 20, 0.185); 
+    border: 1px solid #444;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 250px;       /* Give it a set width */
+    backdrop-filter: blur(10px);
+    
+    opacity: 0;
+    visibility: hidden; /* Better than font-size: 1px */
+    transition: 0.5s ease;
+    z-index: 10;        /* Ensures it stays on top of other elements */
+}
+
+/* Hover Logic */
+li:hover .meaning {
+    opacity: 1;
+    visibility: visible;
+    
+}
+.skill-list li:hover{
+    font-size: larger;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    /* This ensures cards don't touch the screen edges on phones */
+  }
+  
+}
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 50px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin: 20px 0;
+    
+}
+
+.social-links a {
+    text-decoration: none;
+    margin: 0 10px;
+     background-color: rgba(20, 20, 20, 0.185); 
+    border: 1px solid #444;
+    color: white;
+}
