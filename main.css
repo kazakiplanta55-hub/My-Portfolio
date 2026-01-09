@@ -8,6 +8,7 @@ html{
 }
 body{
         background: linear-gradient(to right, #000000, #5b5b5b);
+        overflow-x: hidden;
 }
 .logo{
     color: white;
@@ -198,4 +199,5 @@ footer h3 {
      background-color: rgba(20, 20, 20, 0.185); 
     border: 1px solid #444;
     color: white;
+
 }
